@@ -1,0 +1,14 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>بطريقك | Batariqak — بطريقك Batariqak</title><style>body{margin:0;background:#eef2f0;font-family:system-ui,'Segoe UI',Tahoma,sans-serif;color:#12201c;line-height:1.75}
+main{max-width:720px;margin:0 auto;padding:20px 18px 60px}header{background:#0b5d4b;color:#fff;padding:18px}
+header div{max-width:720px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}header b{font-size:22px}
+button{border:1px solid #ffffff88;background:transparent;color:#fff;border-radius:999px;padding:6px 14px;font:inherit;cursor:pointer}
+h1{font-size:24px;margin:.6em 0 .2em}h2{font-size:18px;margin:1.4em 0 .3em;color:#0b5d4b}p,li{font-size:16px}small{color:#5d6f69}
+a{color:#0b5d4b}nav a{margin-inline-end:14px}[hidden]{display:none!important}</style></head><body>
+<header><div><b>بطريقك · Batariqak</b><button id="sw" type="button">English</button></div></header><main>
+<div data-l="ar"><nav><a href="privacy.html">سياسة الخصوصية</a><a href="terms.html">شروط الاستخدام</a></nav><h1>بطريقك</h1><small>آخر تحديث: 2026-11-20</small><p>خدمة لمشاركة الرحلات بين المدن العراقية: انشر رحلتك أو احجز مقعداً بسعر عادل.</p><nav><a href="privacy.html">سياسة الخصوصية</a><a href="terms.html">شروط الاستخدام</a></nav></div>
+<div data-l="en" hidden><nav><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a></nav><h1>Batariqak</h1><small>Last updated: 2026-11-20</small><p>Intercity ride-sharing in Iraq: publish your trip or book a seat at a fair price.</p></div>
+</main><script>const q=new URLSearchParams(location.search).get('lang');let l=q||localStorage.getItem('l')||(navigator.language||'ar').slice(0,2);if(l!=='en')l='ar';
+function set(x){l=x;try{localStorage.setItem('l',x)}catch(e){}document.documentElement.lang=x;document.documentElement.dir=x==='ar'?'rtl':'ltr';
+document.querySelectorAll('[data-l]').forEach(e=>e.hidden=e.dataset.l!==x);document.getElementById('sw').textContent=x==='ar'?'English':'عربي'}
+document.getElementById('sw').onclick=()=>set(l==='ar'?'en':'ar');set(l)</script></body></html>
